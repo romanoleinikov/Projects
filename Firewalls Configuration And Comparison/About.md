@@ -5,5 +5,5 @@ Presentation is added with summary of comparison and tests.
 - Configure two open-source firewalls
 - Test their performance and functionality
 - Highlight strong and weak sides of each firewall
-Outcome
+### Outcome
 Both firewalls were apropriately tested, including simulating DOS attack. Results and overall functionality of both firewalls were compared. 
