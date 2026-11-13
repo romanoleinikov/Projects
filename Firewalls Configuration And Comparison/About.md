@@ -6,4 +6,4 @@ Presentation is added with summary of comparison and tests.
 - Test their performance and functionality
 - Highlight strong and weak sides of each firewall
 ### Outcome
-Both firewalls were apropriately tested, including simulating DOS attack. Results and overall functionality of both firewalls were compared. 
+Both firewalls were appropriately tested, including simulating DOS attack. Results and overall functionality of both firewalls were compared. 
